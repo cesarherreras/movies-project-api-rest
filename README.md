@@ -11,6 +11,19 @@ It's a website to interact with The movie DB API to make requests about trend mo
 ### Prerequisites
 
 - Open the html file in your browser or use Live Server extension of VS Code.
+- Get the API Key from The movie DB API site. It's necessary to configure Axios settings.
+
+                                //Axios instance
+                                const api = axios.create({
+                                    baseURL: 'https://api.themoviedb.org/3/',
+                                    headers: {
+                                        'Content-Type':'application/json;charset=utf-8'
+                                    },
+                                    params: {
+                                        'api_key': API_KEY,
+                                        'language': definedLanguage
+                                    }
+                                });   
 
 This is enough to get you started.
 You only need a browser.
